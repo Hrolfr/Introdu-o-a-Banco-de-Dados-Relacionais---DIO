@@ -8,4 +8,11 @@
 --email VARCHAR(100) NOT NULL UNIQUE, -- EMAIL DO USUARIO
 --endereco VARCHAR(50) NOT NULL, -- ENDERECO
 --data_nascimento DATE NOT NULL
---)
+--);
+
+-- 3
+--CREATE TABLE destinos(
+--id INT,
+--nome VARCHAR(255) NOT NULL, -- NOME DO DESTINO
+--descricao VARCHAR(255) NOT NULL -- DESCRIÇÃO DO DESTINO
+--);
