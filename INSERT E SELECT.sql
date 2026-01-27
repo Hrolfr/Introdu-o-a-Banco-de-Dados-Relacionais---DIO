@@ -28,5 +28,5 @@
 
 --SELECT * FROM reservas
 
-SELECT * FROM usuarios
-WHERE id = 1 AND nome LIKE '%Maria%'; 
+--SELECT * FROM usuarios
+--WHERE id = 1 AND nome LIKE '%Maria%'; 
