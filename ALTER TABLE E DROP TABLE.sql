@@ -20,3 +20,6 @@ DROP TABLE usuarios;
 
 --esse modo funciona
 exec sp_rename 'usuarios_nova', 'usuarios'; 
+
+ALTER TABLE usuarios 
+ALTER COLUMN endereco VARCHAR(150);
