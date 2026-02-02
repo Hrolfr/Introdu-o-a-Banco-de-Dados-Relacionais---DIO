@@ -23,3 +23,17 @@ LEFT JOIN reservas rs
 SELECT * FROM reservas rs
 RIGHT JOIN destinos ds
 	ON ds.id = rs.id_destino;
+
+--Sub consultas
+
+-- Todos os destinos que não têm reservas
+SELECT * FROM destinos
+WHERE id NOT IN (SELECT id_destino FROM reservas);
+
+-- Usuários que não têm reservas
+SELECT * FROM usuarios
+WHERE id NOT IN (SELECT id_usuario FROM reservas);
+
+-- Conta quantas reservas os usuários têm
+SELECT nome, (SELECT COUNT (*) from reservas WHERE id_usuario = usuarios.id) AS total_reservas FROM usuarios
+
