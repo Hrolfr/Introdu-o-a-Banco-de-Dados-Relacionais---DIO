@@ -15,3 +15,11 @@ FROM usuarios us
 INNER JOIN reservas rs ON us.id = rs.id_usuario;
 
 --LEFT JOIN
+SELECT * FROM destinos des
+LEFT JOIN reservas rs
+	ON des.id = rs.id_destino;
+
+--RIGHT JOIN
+SELECT * FROM reservas rs
+RIGHT JOIN destinos ds
+	ON ds.id = rs.id_destino;
